@@ -4,7 +4,7 @@ if [ ! -f "/var/lib/webosbrew/init.d/homescreen_cleaner" ]; then
 	curl -s -L https://github.com/nnmdd/homescreen_cleaner/raw/main/homescreen_cleaner > /var/lib/webosbrew/init.d/homescreen_cleaner
 	chmod +x /var/lib/webosbrew/init.d/homescreen_cleaner
 	(/var/lib/webosbrew/init.d/homescreen_cleaner)
-	exit 0
+exit 0
 fi
 
 
