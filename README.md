@@ -1,6 +1,4 @@
 homescreen_cleaner
-
-
 this script just nullifies all found portions of adware on lg webos 6.0+ homescreen
 
 idea by @bashalarmist [https://github.com/bashalarmist/war-webos-ad-remover]
