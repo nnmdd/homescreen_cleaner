@@ -1,5 +1,5 @@
 this script just nullifies all found portions of adware on lg webos 6.0+ homescreen
-
+however, the placeholders of the deleted sections remain in place, although they are not noticeable
 idea by @bashalarmist [https://github.com/bashalarmist/war-webos-ad-remover]
 
 to install and run script execute line below:
