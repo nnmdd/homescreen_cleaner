@@ -1,0 +1,21 @@
+#!/bin/bash
+
+mkdir -p /tmp/homescreen_cleaner;
+echo "return" > /tmp/homescreen_cleaner/TopShelf.qml;
+echo "return" > /tmp/homescreen_cleaner/RecentBG.qml;
+echo "return" > /tmp/homescreen_cleaner/AppInterfaces.qml;
+echo "return" > /tmp/homescreen_cleaner/Recommended.qml;
+echo "return" > /tmp/homescreen_cleaner/CPShelf.qml;
+echo "return" | cat > /tmp/homescreen_cleaner/AIBoard.qml;
+#echo "return" | cat > /tmp/homescreen_cleaner/
+
+mount --bind /tmp/homescreen_cleaner/TopShelf.qml /usr/palm/applications/com.webos.app.home/qml/UserInterfaceLayer/Containers/Main/TopShelf.qml;
+mount --bind /tmp/homescreen_cleaner/RecentBG.qml /usr/palm/applications/com.webos.app.home/qml/UserInterfaceLayer/Containers/Main/RecentBG.qml;
+mount --bind /tmp/homescreen_cleaner/AppInterfaces.qml /usr/palm/applications/com.webos.app.home/qml/Interfaces/AppInterfaces/AppInterfaces.qml;
+mount --bind /tmp/homescreen_cleaner/Recommended.qml /usr/palm/applications/com.webos.app.home/qml/UserInterfaceLayer/Containers/Main/Recommended.qml;
+mount --bind /tmp/homescreen_cleaner/CPShelf.qml /usr/palm/applications/com.webos.app.home/qml/UserInterfaceLayer/Containers/Main/CPShelf.qml;
+mount --bind /tmp/homescreen_cleaner/AIBoard.qml /usr/palm/applications/com.webos.app.home/qml/UserInterfaceLayer/Containers/Main/AIBoard.qml;
+#mount --bind -o- /tmp/homescreen_cleaner/AdShelf.qml /usr/palm/applications/com.webos.app.home/qml/UserInterfaceLayer/Containers/Main/AdShelf.qml;
+#mount --bind -o- /tmp/homescreen_cleaner/LiveTV.qml /usr/palm/applications/com.webos.app.home/qml/UserInterfaceLayer/Containers/Main/LiveTV.qmll
+
+pkill -f com.webos.app.home;
